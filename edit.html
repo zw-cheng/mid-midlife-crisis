@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Mid-midlife Calculator</title>
+  </head>
+  <body>
+    <h1>Put your birth date here</h1>
+
+    <form action="/save/{{.Title}}" method="POST">
+
+    <div>
+        <textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea>
+    </div>
+    
+    <div>
+        <input type="text" class="form-control" placeholder="MMDDYYYY, example 06151953">
+        <button type="submit" class="btn btn-primary">OK</button>
+    </div>
+    <footer class="blockquote-footer"> <cite title="Source Title">  I am Lazarus, come from the dead,
+      Come back to tell you all, I shall tell you all </cite></footer>
+
+    </form>
+</body>
+</html>
